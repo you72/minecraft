@@ -21,7 +21,7 @@ header h1 {
 .wrapper {
     width: 100%;
     height: 100vh;
-    background-image: url(image/base.png);
+    background-image: url(image/base2/base2.front.png);
     background-position: center;
     background-size: cover;
     opacity: 0.7;
@@ -72,6 +72,7 @@ header h1 {
     padding: 10px 30px;
 }
 .tableOfContents {
+    text-align: center;
     display: inline-block;
     width: 40%;
     margin: 80px auto 200px auto;
@@ -103,37 +104,82 @@ header h1 {
 /*目次右側*/
 .linkImg{
     position: absolute;
-    left: 34%;/*無理やり、絶対よくない*/
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid rgb(70, 70, 70);
     opacity: 0;
     border-radius: 3px;
     margin-left: 10px;
-    width: 30%;
-    transition-duration: 0.2s;
+    width: 33%;
+    transition-duration: 0.1s;
 }
 .link.base1:hover ~ .linkImg.base1{opacity: 1;}
 .link.sheep:hover ~ .linkImg.sheep{opacity: 1;}
+.link.base2:hover ~ .linkImg.base2{opacity: 1;}
+.link.blacksmith:hover ~ .linkImg.blacksmith{opacity: 1;}
+.link.mason:hover ~ .linkImg.mason{opacity: 1;}
+.link.tomioka:hover ~ .linkImg.tomioka{opacity: 1;}
+.link.oak:hover ~ .linkImg.oak{opacity: 1;}
+.link.cafe:hover ~ .linkImg.cafe{opacity: 1;}
+.link.fountain:hover ~ .linkImg.fountain{opacity: 1;}
 
 /*ここから本文*/
 .contents {
     width: 90%;
     margin: 0 auto;
 }
-.contents h1 {
+.topic{
+    text-align: center;
+}
+.topic h1 {
     display: inline-block;
-    margin: 100px 0 40px 0;
     border-bottom: 8px solid rgb(60, 30, 140);
+    margin: 200px 0 150px 0;
 }
 .contents h2 {
     display: inline-block;
     border-bottom: 4px solid rgb(60, 30, 140);
-    margin: 10px 0 10px 0;
+    margin: 100px 0 10px 0;
 }
-.base1Contents {
-    display: flex;
-    text-align: center;
-}
-.imgBase1{
-    width: 95%;
+.content {display: flex;  text-align: center;}
+
+.image{
+    width: 95%; 
     border-radius: 5px;
+    border: 3px solid rgb(70, 70, 70);
 }
 
+.grback{
+    width: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 0.15s;
+}
+
+.zoom{
+    width: 90%;
+    border:2px solid #000;
+    border-radius: 0.5%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    opacity: 0;
+    transition-duration: 0.15s;
+}
+
+.image:hover {cursor: zoom-in;}
+.image:active ~ .grback{opacity: 0.75; z-index: 5;}
+
+.image.base1.front:active ~ .zoom.base1.front{opacity:1; z-index:10; }
+.image.base1.back:active ~ .zoom.base1.back{opacity:1; z-index:10; }
+.image.sheep.front:active ~ .zoom.sheep.front{opacity:1; z-index:10; }
+.image.sheep.back:active ~ .zoom.sheep.back{opacity:1; z-index:10; }
+.image.base2.front:active ~ .zoom.base2.front{opacity:1; z-index:10; }
+.image.base2.back:active ~ .zoom.base2.back{opacity:1; z-index:10; }
+.image.sheep.front:active ~ .zoom.sheep.front{opacity:1; z-index:10; }
+.image.sheep.back:active ~ .zoom.sheep.back{opacity:1; z-index:10; }

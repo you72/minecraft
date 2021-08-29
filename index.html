@@ -24,7 +24,7 @@
         -->
     </header>
 
-    <div class="wrapper">
+    <div class="wrapper"　>
         <h1>【Minecraft】<br>俺の作ったものを見てくれ</h1>
         <!--
         <a class="enter" >さっそく見てみる</a>
@@ -36,18 +36,26 @@
         <h1 class="mokuzi">目次</h1>
         <div class="tableOfContents">
             <h1>第一拠点</h1>
-                <a class="link base1">仮拠点</a><br>
-                <a class="link sheep">羊牧場</a><br>
-            <h1>第二拠点</h1>
-                <a class="link base2">本拠点</a><br>
+                <a class="link base1" href="#base1">仮拠点</a><br>
+                <a class="link sheep" href="#sheep">羊牧場</a><br>
+            <h1>第二拠点(洋風エリア)</h1>
+                <a class="link base2" href="#base2">本拠点</a><br>
                 <a class="link blacksmith">鍛冶屋</a><br>
                 <a class="link mason">石工の家</a><br>
                 <a class="link tomioka">製図家の家</a><br>
                 <a class="link oak">植林場</a><br>
                 <a class="link cafe">カフェ</a><br>
+                <a class="link fountain">噴水公園</a><br>
 
                 <img class="linkImg base1" src="./image/base1/base1.front.png">
                 <img class="linkImg sheep" src="./image/sheep/sheep.front.png">
+                <img class="linkImg base2" src="./image/base2/base2.front.png">
+                <img class="linkImg blacksmith" src="./image/blacksmith/blacksmith.front.png">
+                <img class="linkImg mason" src="./image/mason/mason.front.png">
+                <img class="linkImg tomioka" src="./image/tomioka/tomioka.front.png">
+                <img class="linkImg oak" src="./image/oak/oak.front.png">
+                <img class="linkImg cafe" src="./image/cafe/cafe.front.png">
+                <img class="linkImg fountain" src="./image/fountain/fountain.front.png">
         </div>
 
 
@@ -56,26 +64,80 @@
 
     <!--ここから本文-->
     <div class="contents">
-        <h1>第一拠点</h1>
+        <!--第一拠点-->
+        <div class="topic">
+            <h1>第一拠点</h1>
+        </div>
         <div class="base1Overall">
             <h2>全体図</h2>
+            <p>ゲーム始めたての時に生活の安定を図るために発展させた拠点です。割とすぐ第二拠点に移動したので建築物は少ないです。</p>
         </div>
-        <div class="base1">
+        <div id="base1">
             <h2>仮拠点</h2>
-            <div class="base1Contents">
-                <div class="base1Front">
-                    <img class="imgBase1 front" src="image/base1/base1.front.png">
+            <div class="content base1">
+                <div class="base1Front"><!--このdivクラスいらない？0825-->
+                    <img class="image base1 front" src="image/base1/base1.front.png">
+                    <img class="grback" src="image/grback.jpg">
+                    <img class="zoom base1 front" src="image/base1/base1.front.png">
                     <p>正面図：フル木材での建築です。2階に小さいバルコニーも作りました。</p>
                 </div>
                 <div class="base1Back">
-                    <img class="imgBase1 back" src="image/base1/base1.back.png">
+                    <img class="image base1 back" src="image/base1/base1.back.png">
+                    <img class="grback" src="image/grback.jpg">
+                    <img class="zoom base1 back" src="image/base1/base1.back.png">
                     <p>背面図：水車を表現したかった。後ろにちらっと写っているのは羊牧場です。</p>
                 </div>
             </div>
         </div>
-        <div class="sheep">
+        <div id="sheep">
             <h2>羊牧場</h2>
+            <div class="content sheep">
+                <div class="sheepFront">
+                    <img class="image sheep front" src="image/sheep/sheep.front.png">
+                    <img class="grback" src="image/grback.jpg">
+                    <img class="zoom sheep front" src="image/sheep/sheep.front.png">
+                    <p>正面図：壁に羊毛を使いました。</p>
+                </div>
+                <div class="sheepBack">
+                    <img class="image sheep back" src="image/sheep/sheep.back.png">
+                    <img class="grback" src="image/grback.jpg">
+                    <img class="zoom sheep back" src="image/sheep/sheep.back.png">
+                    <p>斜視図：後ろと横を作っていないので斜めから。</p>
+                </div>
+            </div>
         </div>
+
+
+        <!--第二拠点-->
+        <div class="topic">
+            <h1>第二拠点(洋風エリア)</h1>
+        </div>
+        <div class="base2Overall">
+            <h2>全体図</h2>
+            <p>洋風の街並みを目指して開発している拠点です。</p>
+        </div>
+        <div id="base2">
+            <h2>本拠点</h2>
+            <div class="content base2">
+                <div class="base2Front"><!--このdivクラスいらない？0825-->
+                    <img class="image base2 front" src="image/base2/base2.front.png">
+                    <img class="grback" src="image/grback.jpg">
+                    <img class="zoom base2 front" src="image/base2/base2.front.png">
+                    <p>正面図：本拠点の洋館で、実在する旧川崎庭園を参考にしています。カッコいい。</p>
+                </div>
+                <div class="base2Back">
+                    <img class="image base2 back" src="image/base2/base2.back.png">
+                    <img class="grback" src="image/grback.jpg">
+                    <img class="zoom base2 back" src="image/base2/base2.back.png">
+                    <p>背面図：ななめまえから。</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </div>
 
     <footer>
