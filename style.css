@@ -202,6 +202,10 @@ header h1 {
         font-family: sans-serif;
     }
 
+    .h1{font-size: 16px;}
+    .h2{font-size: 12px;}
+    .h3{font-size: 8px;}
+
     .content {
         display: inline-block;
     }
