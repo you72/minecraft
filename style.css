@@ -199,18 +199,24 @@ header h1 {
 /*スマホ用レスポンシブ*/
 @media (max-width: 670px ) {
     body{
+        -webkit-text-size-adjust: 100%;
         font-family: sans-serif;
     }
 
-    .h1{font-size: 16px;}
-    .h2{font-size: 12px; font-weight: normal;}
-    .h3{font-size: 8px;}
+    .wrapper {
+        width: 100%;
+        background-position: center;
+        background-size:0%;
+    }
+    .h1{font-size: 30px; font-weight: lighter;}
+    .h2{font-size: 24px; font-weight: normal;}
+    
 
+    .tableOfContents{width: 90%;}
     .contents{
         text-align: center;
     }
-    .contents.h2{font-weight: normal;}
-    .contents.p{margin-bottom: 50px;}
+    .p{padding-bottom: 50px;}
     .content {
         display: inline-block;
     }
