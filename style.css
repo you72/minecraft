@@ -198,7 +198,11 @@ header h1 {
 
 /*スマホ用レスポンシブ*/
 @media (max-width: 670px ) {
-    .h1{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    body{
+        font-family: sans-serif;
+    }
+
+    .content {
+        display: inline-block;
     }
 }
