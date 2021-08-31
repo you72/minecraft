@@ -209,12 +209,6 @@ header h1 {
         height: 250px;
         width: 100%;
         margin: 0 0;
-        background-image: url(image/base2/base2.front.png);
-        background-position: center;
-        background-size: cover;
-        opacity: 0.7;
-        text-align: center;
-        position: relative;
     }
     .wrapper h1{
         font-size: 20px;
@@ -222,6 +216,7 @@ header h1 {
         border: 4px solid #000;
         border-radius: 10px;
     }
+    .mokuzi{font-size: 1.5rem}
     .tableOfContents h1{
         font-size: 1.5rem;
         margin-top: 10px;
@@ -229,7 +224,7 @@ header h1 {
     .link {font-size: 1.2rem;}
 
     .tableOfContents{width: 90%;}
-    .topic h1{font-size: 1.5rem;}
+    .topic h1{font-size: 1.7rem;}
     .contents{
         text-align: center;
     }
