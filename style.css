@@ -216,7 +216,7 @@ header h1 {
         padding: 8px 0;
     }
     header h3{font-size: 0.9rem;}
-    .dummyHeader{padding: 8px 0; font-size: 0.9rem;}
+    .dummyHeader{padding: 8px 0; font-size: 0.9rem; color:white;}
     .wrapper {
         box-sizing: border-box;
         max-width: 100%;
