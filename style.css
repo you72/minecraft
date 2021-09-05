@@ -88,7 +88,6 @@ header h1 {
     margin: 80px auto 200px auto;
 }
 .tableOfContents h1{
-    font-weight: lighter;
     margin-top: 20px;
 }
 .link {
@@ -128,6 +127,7 @@ header h1 {
 .link.sheep:hover ~ .linkImg.sheep{opacity: 1;}
 .link.base2:hover ~ .linkImg.base2{opacity: 1;}
 .link.blacksmith:hover ~ .linkImg.blacksmith{opacity: 1;}
+.link.tower:hover ~ .linkImg.tower{opacity: 1;}
 .link.mason:hover ~ .linkImg.mason{opacity: 1;}
 .link.tomioka:hover ~ .linkImg.tomioka{opacity: 1;}
 .link.oak:hover ~ .linkImg.oak{opacity: 1;}
@@ -196,6 +196,8 @@ header h1 {
 .image.base2.back:active ~ .zoom.base2.back{opacity:1; z-index:10; }
 .image.blacksmith.front:active ~ .zoom.blacksmith.front{opacity:1; z-index:10; }
 .image.blacksmith.back:active ~ .zoom.blacksmith.back{opacity:1; z-index:10; }
+.image.tower.front:active ~ .zoom.tower.front{opacity:1; z-index:10; }
+.image.tower.back:active ~ .zoom.tower.back{opacity:1; z-index:10; }
 .image.mason.front:active ~ .zoom.mason.front{opacity:1; z-index:10; }
 .image.mason.back:active ~ .zoom.mason.back{opacity:1; z-index:10; }
 .image.tomioka.front:active ~ .zoom.tomioka.front{opacity:1; z-index:10; }
@@ -255,7 +257,7 @@ footer p{border-bottom: 1px solid rgb(60, 30, 140);}
         text-align: center;
     }
     .contents h2{font-size: 1.3rem; margin-bottom: 20px;}
-    .contents p{margin-bottom: 20px;}
+    .contents p{margin: 0 15px 20px 15px;}
     .content {
         display: inline-block;
     }
