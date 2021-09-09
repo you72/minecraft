@@ -143,16 +143,20 @@ header h1 {
     text-align: center;
 }
 .topic h1 {
-    display: inline-block;
-    border-bottom: 8px solid rgb(60, 30, 140);
-    margin: 200px 0 150px 0;
+    display: block;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 8px -1px 1px 0 grey inset;
+    /*border-bottom: 8px solid rgb(60, 30, 140);*/
+    padding: 10px 0;
+    margin: 200px 10px 150px 10px;
 }
 .contents h2 {
     display: inline-block;
     border-bottom: 4px solid rgb(60, 30, 140);
     margin: 100px 0 10px 0;
 }
-.content {display: flex;  text-align: center;}
+.content {display:flex; flex-wrap: wrap; text-align: center;}
+.item{width:50%;}
 
 .image{
     width: 95%; 
@@ -206,6 +210,8 @@ header h1 {
 .image.oak.back:active ~ .zoom.oak.back{opacity:1; z-index:10; }
 .image.cafe.front:active ~ .zoom.cafe.front{opacity:1; z-index:10; }
 .image.cafe.back:active ~ .zoom.cafe.back{opacity:1; z-index:10; }
+.image.cafe.point1:active ~ .zoom.cafe.point1{opacity:1; z-index:10; }
+.image.cafe.point2:active ~ .zoom.cafe.point2{opacity:1; z-index:10; }
 .image.fountain.front:active ~ .zoom.fountain.front{opacity:1; z-index:10; }
 .image.fountain.back:active ~ .zoom.fountain.back{opacity:1; z-index:10; }
 
@@ -261,6 +267,7 @@ footer p{border-bottom: 1px solid rgb(60, 30, 140);}
     .content {
         display: inline-block;
     }
+    .item{width:100%;}
 
     footer{width: 52%;}
 }
