@@ -143,6 +143,7 @@ header h1 {
     text-align: center;
 }
 .topic h1 {
+    font-size: 28px;
     display: block;
     background-color: rgb(220, 220, 220);
     box-shadow: 8px -1px 1px 0 grey inset;
@@ -257,7 +258,7 @@ footer p{border-bottom: 1px solid rgb(60, 30, 140);}
         font-size: 1.5rem;
         margin-top: 20px;
     }
-    .topic h1{margin: 120px 0 60px 0; font-size: 1.7rem;}
+    .topic h1{margin: 120px 0 60px 0; font-size: 1.4rem;}
     .contents{
         width: 95%;
         text-align: center;
