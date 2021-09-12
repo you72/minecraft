@@ -157,7 +157,6 @@ header h1 {
     margin: 100px 0 10px 0;
 }
 .contents p{
-    font-family: "MS PGothic","MS Pゴシック";
     line-height: 20px;
 }
 .content {display:flex; flex-wrap: wrap; text-align: center;}
