@@ -156,6 +156,10 @@ header h1 {
     border-bottom: 4px solid rgb(60, 30, 140);
     margin: 100px 0 10px 0;
 }
+.contents p{
+    font-family: "MS PGothic","MS Pゴシック";
+    line-height: 20px;
+}
 .content {display:flex; flex-wrap: wrap; text-align: center;}
 .item{width:50%;}
 
@@ -264,7 +268,10 @@ footer p{border-bottom: 1px solid rgb(60, 30, 140);}
         text-align: center;
     }
     .contents h2{font-size: 1.3rem; margin-bottom: 20px;}
-    .contents p{margin: 0 15px 20px 15px;}
+    .contents p{
+        margin: 0 15px 20px 15px;
+        font-size: 0.8rem;
+    }
     .content {
         display: inline-block;
     }
