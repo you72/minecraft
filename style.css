@@ -204,6 +204,8 @@ header h1 {
 .image.base2.back:active ~ .zoom.base2.back{opacity:1; z-index:10; }
 .image.blacksmith.front:active ~ .zoom.blacksmith.front{opacity:1; z-index:10; }
 .image.blacksmith.back:active ~ .zoom.blacksmith.back{opacity:1; z-index:10; }
+.image.blacksmith.point1:active ~ .zoom.blacksmith.point1{opacity:1; z-index:10; }
+.image.blacksmith.ponit2:active ~ .zoom.blacksmith.ponit2{opacity:1; z-index:10; }
 .image.tower.front:active ~ .zoom.tower.front{opacity:1; z-index:10; }
 .image.tower.back:active ~ .zoom.tower.back{opacity:1; z-index:10; }
 .image.mason.front:active ~ .zoom.mason.front{opacity:1; z-index:10; }
